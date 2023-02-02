@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../img/1 Cosa de Locos.gif" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link de BT -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Productos</title>
+</head>
+<body>
+        <!-- Creacion del header separando el logo y el menu mediante tablas -->
+        <header id="irarriba" > 
+            <a href="../index.html"><img src="../img/1 Cosa de Locos.png" alt="Logo del emprendimiento"></a>
+            
+    <!-- Creacion del menu utilizando Bootstrap -->
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/productos.html">REMERAS</a></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">BUZOS</a></li>
+                            <li><a class="dropdown-item" href="../pages/productos.html">TAZAS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/tabla-de-talles.html">TABLA DE TALLES</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            
+        </header>
+
+    <!-- Parte principal del html con producto, descripcion, precio y boton de compra -->
+    <main>
+        <h1>PRODUCTOS DESTACADOS</h1>
+        <section class="producto">
+            <img src="../img/1-Daly Chester Lampwick.png" alt="Remera Chester Lampwick Los Simpsons" class="remera-chester">
+            <div class="precio-producto">
+            <p>Remera Unisex - Los Simpsons Chester Lampwick</p>
+            <h2>$5.000,00</h2>
+            <p><strong>3 </strong>cuotas sin interés de <strong>$1.666,67</strong></p>
+            </div>
+            <div class="boton"> Comprar </div>
+            
+        </section>
+        <div>
+            <img class="item-fixed" src="../img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="">
+        </div>
+    </main>
+    
+    <footer>
+        <h3>Todos los derechos reservados <a class="ir-arriba" href="#irarriba">Volver arriba</a></h3>
+    </footer>
+</body>
+
+</html>

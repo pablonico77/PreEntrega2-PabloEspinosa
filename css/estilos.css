@@ -1,0 +1,201 @@
+/* reset y body */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+/* estilos del Header */
+header{
+    background-color: rgb(244, 223, 198) !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-decoration: none;
+}
+.dropdown-menu{
+    background-color: rgb(244, 223, 198) !important;
+    color: rgb(113, 113, 113) !important;
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+    font-family: monospace !important ;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(113, 113, 113) !important;
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+    font-family: monospace !important ;
+
+}
+
+a:hover{
+    color: brown !important;
+}
+
+.logo{
+    height: 10%;
+}
+
+
+header img{
+    height: 4.5rem;
+}
+
+
+.logo{
+    text-align: start;
+}
+
+
+/* estilos del main */
+
+main section{
+    display: flex;
+    display: block;
+    width: cover;
+}
+main h1{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* barra de descuento en el index */
+.promociones{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 150, 150) ;
+    color: whitesmoke;
+    padding: 15px 10px 0px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* estilos de las section que contiene al banner y las imagenes de las remeras con grid*/
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.remeras{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    grid-gap: 2rem;
+    justify-content: space-around;
+}
+
+
+/* estilos del footer */
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Boton WhatsApp  */
+.item-fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+    animation-name: animacion-div;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes animacion-div {
+    0%{
+        transform: scale(0.1);
+    }
+
+    50%{
+        transform: scale(0.6);
+    }
+
+    100%{
+        transform: scale(0.8);
+    }
+}
+
+.ir-arriba{
+    display: none;
+}
+
+
+/* estilos de producto - comparte los estilos del header, main>h1 y footer de los otros html*/
+.producto{
+    text-align: center;
+    margin: 100px 0 200px 0;
+}
+.precio-producto{
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton{
+    display: inline-block;
+    background-color: #e37733;
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    color: whitesmoke;
+    box-shadow: 3px 3px 10px black;}
+
+/* estilos preguntas frecuentes - comparte los estilos del header, main>h1 y footer del los otros html */
+
+/* estilos tabla de talles */
+.tabla-talles{
+    font-size: 22px;
+}
+
+/* estilos contacto  - comparte los estilos del header, main>h1 y footer de los otros html*/
+
+main h2{
+    margin: 20px 0 20px 0;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formularios{
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 20px;
+}
+
+.textarea{
+    margin-top: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+/* estilos de pantallas de escritorio */
+
+@media screen and (min-width:1024px){
+
+    .ir-arriba{
+        display: inline-block;
+    }
+
+    .remeras{
+        margin: 1rem 1rem 1rem 1rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 2rem;
+        grid-gap: 2rem;
+        justify-content: space-around;
+    }
+}
